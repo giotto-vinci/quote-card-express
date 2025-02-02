@@ -1,0 +1,156 @@
+@import url("reset.css");
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+  font-size: 1em;
+  line-height: 1.6;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 1.6rem;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0 0 1.6rem;
+}
+
+a {
+  color: #0056b3;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #002348;
+  border-bottom: 2px solid #002348;
+}
+
+hr {
+  margin: 3.2rem 1.6rem;
+  color: #555555;
+  border-color: #555555;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38, 38, 39);
+  width: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: auto;
+  background-image: url(https://raw.githubusercontent.com/giotto-vinci/webdev-classproject-001/refs/heads/main/img/carbon-fiber-11gbag3a3s3o1b3f.webp);
+}
+
+/*
+
+background-color: rgb(38, 38, 39);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-grow: 0;
+flex-shrink: 1;
+
+position: relative;
+*/
+
+/*
+position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 4rem;
+  max-width: 600px;
+  max-height: 500px;
+  */
+
+.quote-card {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2em;
+  margin: 2px auto;
+  background-color: rgb(201, 180, 154);
+  border: 4px solid white;
+}
+
+blockquote {
+  border: none;
+  font-family: Georgia, Times, 'Times New Roman', serif, "Times New Roman", Times, serif;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 4em;
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  margin: 0 auto;
+}
+blockquote:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 4em;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-weight: bold;
+}
+
+.author {
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Media Queries */
+
+@media (min-width: 699px) {
+  /* CSS HERE */
+  .main {
+    width: 100%;
+  }
+}
+
+/* Desktop Media Query */
+@media (min-width: 999px) {
+  /* CSS HERE */
+}
