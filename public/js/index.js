@@ -1,11 +1,11 @@
 "use strict";
 
 const el = {
-    quote: document.getElementById("quote"),
+    quote: document.getElementById('quote'),
     author: document.getElementById("author")
 
 }
-/*
+
 const quotes = [
     {
         quote: '"It is better to be a warrior in a garden, than a gardener in a war."',
@@ -43,7 +43,7 @@ const quotes = [
     },
 
 ]
-*/    
+
 
 function loopThroughQuotes() {
     let count = 0;
