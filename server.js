@@ -13,6 +13,6 @@ app.use(express.urlencoded({extended: false}));
 
 // Serves the whole app.
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:$(port)`);
+    console.log(`Server is running on http://localhost:${port}`);
     console.log("Press Ctrl+C to end this process.");
 })
