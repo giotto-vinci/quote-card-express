@@ -46,14 +46,14 @@ const quotes = [
 
 
 function loopThroughQuotes() {
-    let count = 0;
+    let currentIndex = 0;
     setInterval(() => {
         if (count < quotes.length) {
             el.quote.innerText = quotes[index].quote;
             el.author.innerText = quotes[index].author;
             index++;
         } else {
-            index = 0;
+            currentIndex = 0;
         }
     }, 3000)
 }
