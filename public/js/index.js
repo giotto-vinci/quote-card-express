@@ -5,18 +5,19 @@ const el = {
     author: document.getElementById("author")
 
 }
-
+/*
 async function getRandomPhoto() {
     const url = "";
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
+        // console.log.urls.regular);
+        const imageUrl = data.urls.regular
     } catch (error) {
         console.log(error)
     }
 }
-
+*/
 const quotes = [
     {
         quote: '"It is better to be a warrior in a garden, than a gardener in a war."',
