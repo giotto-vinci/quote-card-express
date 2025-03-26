@@ -7,7 +7,10 @@ const port = 1776;
 
 require("dotenv").config();
 const cors = require("cors");
-app.use(cors());
+const corsOptions = {
+  origin: `http://localhost:1776`
+}
+app.use(cors(corsOptions));
 
 // Serves the front-end content in the public directory.
 app.use("", express.static(path.join(__dirname, "./public")));
@@ -16,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 async function getRandomPhoto() {
-  const url = `http//api.unplash.com/photos/?client_id${process.env.CLIENT_ID}`;
+  const url = `http://api.unplash.com/photos/?client_id=${process.env.CLIENT_ID}`;
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -28,10 +31,10 @@ async function getRandomPhoto() {
 }
 
 app.get("/api/getRandomImage", (request, response) => {
-  getRandomPhoto().then((returnedData) => {
+  getRandomPhoto().then((returnedPhoto) => {
     response.status(200).json({
       status: 200,
-      data: returnedData,
+      data: process.env.CLIENT_ID
     });
   });
 });

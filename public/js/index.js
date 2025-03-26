@@ -11,11 +11,11 @@ async function getRandomPhoto() {
     const url = "http://localhost:1776/api/getRandomImage";
     try {
         const response = await fetch(url);
-        const data = await response.json();
-        const receivedPhoto = data;
+        const data = await response.json()
+        const receivedPhoto = data
 
-        const imgDiv = document.querySelector(".background-img")
-        imgDiv = style.backgroundImage = `url(${receivedPhoto})`
+        const secCon = document.querySelector(".container")
+        secCon.style.backgroundImage = `url(${receivedPhoto})`
     } catch (error) {
         console.log(error)
     }

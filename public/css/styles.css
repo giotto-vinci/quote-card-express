@@ -69,6 +69,9 @@ hr {
 */
 
 .container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0 auto;
   padding: 1rem;
   width: auto;
@@ -99,7 +102,7 @@ position: relative;
   background-color: rgb(201, 180, 154);
   border: 4px solid white;
 }
-  /*
+/*
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -114,11 +117,12 @@ position: relative;
 
 blockquote {
   border: none;
-  font-family: Georgia, Times, 'Times New Roman', serif, "Times New Roman", Times, serif;
+  font-family: Georgia, Times, "Times New Roman", serif, "Times New Roman",
+    Times, serif;
   margin: 0 auto;
   padding: 1rem;
 }
-  
+
 .quote-text {
   display: flex;
   flex-direction: column;
@@ -126,15 +130,15 @@ blockquote {
   padding: 2rem;
   font-weight: bold;
 }
-  .author-text {
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 3rem;
-    font-style: italic;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
+.author-text {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 3rem;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .quote-text::before {
   content: open-quote;
@@ -148,7 +152,7 @@ blockquote {
   align-self: flex-start;
 }
 
-  /*
+/*
   content: open-quote;
   font-weight: bold;
   font-size: 3rem;
@@ -158,7 +162,7 @@ blockquote {
   left: 6px;
   margin: 0 auto;
 */
-  
+
 .quote-text::after {
   content: close-quote;
   font-weight: bold;
@@ -170,7 +174,7 @@ blockquote {
   margin: 0 auto;
   padding: 0;
 }
-  /*
+/*
   content: close-quote;
   font-weight: bold;
   font-size: 4em;
